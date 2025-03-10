@@ -1,2 +1,0 @@
-# sofcortega.github.io
-:D
