@@ -1,6 +1,12 @@
-div {color:red;
 
-    background-color:orange;
 
-}
+body{ background-color: #FEF9E7;}
 
+h1{color:#A9CCE3;}
+h2{color:indianred}
+
+p{color:indianred}
+
+blockquote{color:indianred}
+ 
+p{text-indent: 50px;}
