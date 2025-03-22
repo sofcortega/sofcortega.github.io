@@ -1,0 +1,15 @@
+ 
+
+body{ background-color: #FEF9E7;}
+
+h1{color:#A9CCE3;}
+h2{color:indianred}
+
+p{color:indianred}
+
+blockquote{color:indianred}
+ 
+p{text-indent: 50px;}
+
+.wrapper{ row1-start: 25% [row1-end] row2-start 25% [row2-end];
+}
