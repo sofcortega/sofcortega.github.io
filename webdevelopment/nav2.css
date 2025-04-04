@@ -1,38 +1,41 @@
-.navbar{display: inline-flex;width: 100;background-color: #F9E79F;
-display:flex; position:sticky;align-items:center;;}
+.navbar{display: inline-flex;
+display:flex; position:sticky;align-items:center;}
 
 .menu{font-family: Georgia, 'Times New Roman', Times, serif;
-display: flex;list-style: none;align-content:center;letter-spacing: 1.5px;font-size: 10px;}
+display: flex;list-style: none;align-content:center;word-spacing:10px;}
 
-.menu li{margin-right:0px;display: inline-block;position: relative;}
+.menu li{display: block ;position: relative;border: 3px dotted indianred;border-radius: 80px;margin-left: 20px;margin-right: 20px;
+    align-content: center;align-items: center;text-align: center;border-spacing: 40px;background-color: #F9E79F;
+    inline-size: 200px;}
 
-.menu li a{ display: block;padding: 10px 10px 10px 10px; color:indianred;font-size: 15px;padding: 10px}
+
+.menu li a{ display: block;padding: 30px 30px 30px 30px; color:indianred;font-size:large;padding: 20px;margin: 1px 15px 1px 15px;letter-spacing: 2px;;}
 
 /*change hover color*/
-.menu li a:hover{border:3px dotted indianred;}
 
 /*dropdown content*/
-.dropdown{ display: none;position:absolute;margin: 15px ; width:5px;
-    background-color:aqua;text-align: center;}
-
+.dropdown{ display:none;position:absolute;width:160px;font-size:5px;border: 3px indianred;
+    background-color:#F9E79F;text-align:center;height:200px;border-radius:50px;inset-block-start: 7px;}
 /*links inside dropdown*/
-.droplink:hover a{
-    float: none;color: rgb(164, 44, 44); position:absolute
-    padding: 5px;text-decoration:dotted; display: inline;text-align: center;}
+.dropdown a{
+    float: none;color: indianred; 
+    padding: 10px 10px; display: inline ;text-align: center;}
 
 /*dropdown menu hover*/
-.droplink:hover .dropdown{display: block;padding-left: 50px;}
+.droplink:hover .dropdown{display: block;position: relative;}
+
 
 /*hide desktop hamburger*/
 label{display: none;}
 
-@media only screen and (max-width:950px){
-    label{display: inline;padding-left: 10px;color: indianred;
-    width: 2px;font-size: 3em;}
+@media only screen and (max-width:1305px){
+    label{display: block;padding-left: 5px;color: indianred;
+    width: 2px;font-size: 3em;align-items: center;}
     .menu li a{display: none;}
+    .menu li {display: none;}
     }
 
-.droplink:hover {display: block;}
+.droplink:hover {display: grid;}
 
 .menu nav:active ul{display: none;position:absolute
     ;padding: 20px 20px 20px 20px 0px; top:20px;}
