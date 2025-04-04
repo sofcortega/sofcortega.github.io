@@ -1,0 +1,47 @@
+.navbar{display: inline-flex;width: 100;background-color: #F9E79F;
+display:flex; position:sticky;align-items:center;;}
+
+.menu{font-family: Georgia, 'Times New Roman', Times, serif;
+display: flex;list-style: none;align-content:center;letter-spacing: 1.5px;font-size: 10px;}
+
+.menu li{margin-right:0px;display: inline-block;position: relative;}
+
+.menu li a{ display: block;padding: 10px 10px 10px 10px; color:indianred;font-size: 15px;padding: 10px}
+
+/*change hover color*/
+.menu li a:hover{border:3px dotted indianred;}
+
+/*dropdown content*/
+.dropdown{ display: none;position:absolute;margin: 15px ; width:5px;
+    background-color:aqua;text-align: center;}
+
+/*links inside dropdown*/
+.droplink:hover a{
+    float: none;color: rgb(164, 44, 44); position:absolute
+    padding: 5px;text-decoration:dotted; display: inline;text-align: center;}
+
+/*dropdown menu hover*/
+.droplink:hover .dropdown{display: block;padding-left: 50px;}
+
+/*hide desktop hamburger*/
+label{display: none;}
+
+@media only screen and (max-width:950px){
+    label{display: inline;padding-left: 10px;color: indianred;
+    width: 2px;font-size: 3em;}
+    .menu li a{display: none;}
+    }
+
+.droplink:hover {display: block;}
+
+.menu nav:active ul{display: none;position:absolute
+    ;padding: 20px 20px 20px 20px 0px; top:20px;}
+
+
+
+@media only screen and (min-width:951px){
+
+}
+
+.navbar:hover {display:block}
+    
