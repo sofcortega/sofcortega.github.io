@@ -35,7 +35,6 @@ label{display: none;}
 @media only screen and (max-width:1340px){
     label{display: block;padding-left: 25px;color: indianred;
     width: 2px;font-size: 3em;align-items: center;}
-    .menu li a{display: none;}
     .menu li {display: none;}
     }
 
@@ -44,10 +43,6 @@ label{display: none;}
 .menu nav:active ul{display: none;position:absolute
     ;padding-top:20px;}
  
-#toggle checked +.menu{
-    display:grid
-}
-    
     #toggle{
         display: none;}
     
@@ -61,17 +56,25 @@ label{
         cursor: pointer;}
 
     .menu {text-align: center;width: 100%;}
+/*this part below controls the hamburger toggle*/
+    
+.menu a {display: none;margin: 0;}
+    #toggle:checked +.menu{display: block;} 
+   
+    
+    @media screen and (max-width:640px) 
+    {   #hamburger{width: 100%;}
+        #toggle{width: 0%;}
+         }
 
-    .menu a {display: none;margin: 0;}
-    #toggle:checked +.menu{display: block;}
 
     .menu a:link{background-color: #F9E79F;border: 3px dotted indianred;
         margin: 5px;border-radius: 90px; background-color: #faedba;}
 
-#hamburger {display: none;}
+#toggle {display: none;}
 
-#hamburger {
-    display: inline-block;
+#toggle {
+  
     padding-left: 20px;
     width: 26px;
     font-size: 2em;
