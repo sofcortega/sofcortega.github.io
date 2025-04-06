@@ -74,7 +74,7 @@
         .menu nav:active{display: none;}
         label{display: none;}
 
-    input {display:none;}}
+    nav input {display:none;}}
     
     nav ul li ul {       
          display:none;}
