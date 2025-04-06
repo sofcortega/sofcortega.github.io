@@ -44,6 +44,9 @@
         width: 26px;         
         font-size: 2em;
     }
+
+    label{color:indianred;font-size: 3em;}
+
     .menu{display: none;}
 
    nav ul, nav:active ul {
@@ -61,8 +64,14 @@
         border: 3px indianred dotted;
         padding: 5px;
         border-right: 0px; }
+
+        input{opacity:10%;position:absolute; left:40px}
     }
-   
+    @media only screen and (min-width: 641px) {
+        .menu nav:active{display: none;}
+        label{display: none;}
+    input {display:none;}}
+    
     nav ul li ul {       
          display:none;}
         
