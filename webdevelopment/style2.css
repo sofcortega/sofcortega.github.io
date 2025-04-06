@@ -1,0 +1,48 @@
+body{ background-color: #fbf4db;}
+
+header{display:inline;
+vertical-align: center;}
+
+h1{color:hsl(203, 23%, 65%);text-align: center;background-color: #f9e79f;
+    border: 3px dotted indianred;border-radius: 90px;
+    font-size: xx-large;letter-spacing: 3px;}
+h2{color:indianred}
+
+p{color:indianred;border: 3px dotted indianred;text-align: center;
+    padding: 80px;border-radius: 50%;background-color: #f9e79f;}
+
+blockquote{color:indianred;}
+ 
+.navbar{padding-left: 30px;}
+
+p{text-indent: 50px;}
+
+div header h1{font-size: xxx-large;font-weight: 9;letter-spacing: 15px;line-height:normal;
+    min-width: 60px;align-items: center;align-content: center;}
+
+h2{text-align: center;font-style: italic;font-weight: 1;letter-spacing: 3px;}
+
+
+div header{text-align:center; position:relative;height: 90px;display:grid; ;
+}
+
+main div{padding: 15px;}
+
+div p {word-spacing: 1px;letter-spacing: 1px;}
+
+main {padding: 15px 15px 15px 15px}
+
+footer p{color:indianred;;border: indianred 3px dotted ;border-radius: 90px;;
+    text-align: center;font-size: large;letter-spacing: 3px;background-color: #f9e79f;
+    padding:5px;margin: 5px;}
+
+    img{  height:100%; max-width: 100%; }
+
+    main form{text-align:center;padding:40px}
+
+form label {text-align: center;}
+
+div input{padding-bottom: 18px}
+
+
+    form input{block-size: 8px;text-align: center;opacity:100;padding-top: 5px;align-content: center;margin-bottom: 15px;}
