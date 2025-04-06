@@ -1,0 +1,79 @@
+/* hamburger method -  */
+
+.navbar{display: inline-flex;
+    display:flex; position:sticky;align-items:center;}
+    
+    .menu{align-content: center;font-family: Georgia, 'Times New Roman', Times, serif;
+    display:inline-block;list-style: none;align-content:center;word-spacing:10px;}
+    
+    .menu li{display: block ;position:relative;border: 3px dotted indianred;
+        border-radius: 60px;margin-top: -10px;margin-bottom: 20px;
+        margin-left: 20px;margin-right: 108px;
+        align-content: center;align-items: center;text-align: center;background-color: #F9E79F;
+        inline-size: 200px;margin-left: -43px;}
+
+.menu li a{ display: block; color:indianred;font-size:large;padding: 20px;
+    margin: 1px 15px 1px 15px;letter-spacing: 2px;;}
+
+    /*dropdown content*/
+.dropdown{ display:none;
+    position:absolute;width:160px;font-size:5px;border: 3px indianred;
+   ;text-align:center;height:283px;border-radius:50px;inset-block-start: 7px;}
+/*links inside dropdown*/
+.dropdown a{
+    float: none;color: indianred; 
+    padding: 10px 10px; display: inline ;text-align: center;}
+
+    /*dropdown menu hover*/
+.droplink:hover .dropdown{display: block;position: relative;}
+
+.droplink:hover {display: grid;}
+
+.menu a:link{background-color: #F9E79F;border: 3px dotted indianred;
+    margin: 5px;border-radius: 90px; background-color: #faedba;}
+
+.menu nav:active ul{display: none;position:absolute
+    ;padding-top:20px;}
+
+@media only screen and (max-width: 640px) {
+.menu nav:active{display: none;}
+
+    #hamburger {
+        display: inline-block;        
+        padding-left: 30px;        
+        width: 26px;         
+        font-size: 2em;
+    }
+
+    label{color:indianred;font-size: 3em;}
+
+    .menu{display: none;}
+
+   nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 25px 25px 25px 0px;
+        top: 20px;
+    }
+    .menu a {display: none;margin: 0;}
+    #toggle:checked +.menu{display: block;}
+    
+    nav:checked ul {
+        display: inline-block;
+        background-color: #f9e79f;
+        border: 3px indianred dotted;
+        padding: 5px;
+        border-right: 0px; }
+
+        input{opacity:10%;position:absolute; left:40px}
+    }
+    @media only screen and (min-width: 641px) {
+        .menu nav:active{display: none;}
+        label{display: none;}
+    input {display:none;}}
+    
+    nav ul li ul {       
+         display:none;}
+        
+    
+        
