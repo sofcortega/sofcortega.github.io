@@ -1,0 +1,84 @@
+/* hamburger method -  */
+
+.navbar{display: inline-flex;
+    display:flex; position:sticky;align-items:center;}
+    
+    .menu{align-items: center;font-family: Georgia, 'Times New Roman', Times, serif;
+        border: 3px dotted indianred;padding:20px;border-radius: 50px;
+    display:inline-block;text-align: center;list-style: none;align-content:center;
+    word-spacing:10px;background-color: rgba(194, 216, 228, 0.55);margin-right:30px;width: 100%;}
+    
+    .menu li{display: inline-flex ;position:relative;border: 3px dotted indianred;
+        border-radius: 50px;margin-right:3px;margin-bottom: 30px;padding: 0 10px;
+        align-content: center;align-items:center ;text-align: center;background-color: #F9E79F;
+        ;}
+
+.menu li a{display: block; color:indianred;font-size:large;padding: 15px;
+    margin: 1px 15px 1px 15px;letter-spacing: 2px;position: relative;}
+
+    /*dropdown content*/
+.dropdown{ display:none;
+    position:absolute;font-size:5px;
+   ;text-align:center;width: 100%;border-radius:50px;padding: 0px 10px}
+/*links inside dropdown*/
+
+.dropdown a{
+    float: none;color: indianred;
+    padding: 10px 10px; display: inline;text-align: center;}
+
+    /*dropdown menu hover*/
+.droplink:hover .dropdown{display: block;position: relative;}
+
+.droplink:hover {display: grid;}
+
+.menu a:link{border: 3px dotted indianred; padding:15px;
+    margin: 15px;border-radius: 90px; background-color:#f6ebbf;font-size: 15px;}
+
+    .menu nav:active ul{display: none;position:absolute
+    ;padding-top:20px;}
+
+@media only screen and (max-width: 640px) {
+.menu nav:active{display: none;}
+
+    #hamburger {
+        display: inline-block;        
+        padding-left: 22px;        
+        width: 26px;         
+        font-size: 2em;
+    }
+
+    label{color:indianred;font-size: 10
+        em;}
+
+    .menu{display: none;}
+
+   nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 25px 25px 25px 0px;
+        top: 20px;
+    }
+    .menu a {display: none;margin: 0;}
+    #toggle:checked +.menu{display: inline;width: 70%;padding-left: -22px;}
+    
+    nav:checked ul {
+        display: inline-block;
+        background-color: #f9e79f;
+        border: 3px indianred dotted;
+        padding: 5px;
+        border-right: 0px; }
+
+    nav input{opacity:20%;position:absolute; left: 55px}
+    }
+
+    @media only screen and (min-width: 641px) {
+        .menu nav:active{display: none;}
+        label{display: none;}
+
+    nav input {display:none;}}
+    
+    nav ul li ul {       
+         display:none;}
+        
+    
+        
