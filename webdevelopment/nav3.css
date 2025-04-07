@@ -19,7 +19,7 @@
     /*dropdown content*/
 .dropdown{ display:none;
     position:absolute;font-size:5px;
-   ;text-align:center;height:100%;width: 100%;border-radius:50px;inset-block-start: 7px;padding: 0px 10px}
+   ;text-align:center;height:100%;width: 100%;border-radius:50px;padding: 0px 10px}
 /*links inside dropdown*/
 
 .dropdown a{
@@ -59,7 +59,7 @@
         top: 20px;
     }
     .menu a {display: none;margin: 0;}
-    #toggle:checked +.menu{display: block;left:70px}
+    #toggle:checked +.menu{display: block;left:0px}
     
     nav:checked ul {
         display: inline-block;
