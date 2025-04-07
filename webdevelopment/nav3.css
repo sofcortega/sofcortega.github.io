@@ -59,7 +59,7 @@
         top: 20px;
     }
     .menu a {display: none;margin: 0;}
-    #toggle:checked +.menu{display: block;left:5px;height:500px}
+    #toggle:checked +.menu{display: block;left:10px;height:500px}
     
     nav:checked ul {
         display: inline-block;
