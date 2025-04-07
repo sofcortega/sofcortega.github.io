@@ -15,9 +15,9 @@ blockquote{color:indianred;}
  
 .navbar{padding-left: 30px;}
 
-p{text-indent: 50px;}
+p{text-indent: 0px;}
 
-div header h1{font-size: xxx-large;font-weight: 9;letter-spacing: 15px;line-height:normal;
+div header h1{font-size: xx-large;font-weight: 9;letter-spacing: 15px;line-height:normal;
     min-width: 60px;align-items: center;align-content: center;}
 
 h2{text-align: center;font-style: italic;font-weight: 1;letter-spacing: 3px;}
@@ -36,13 +36,16 @@ footer p{color:indianred;;border: indianred 3px dotted ;border-radius: 90px;;
     text-align: center;font-size: large;letter-spacing: 3px;background-color: #f9e79f;
     padding:5px;margin: 5px;}
 
-    img{  height:100%; max-width: 100%; }
+    img{ max-width: 100%; }
 
-    main form{text-align:center;padding:40px}
+    main form{text-align:center;padding:40px;border:3px dashed indianred}
 
 form label {text-align: center;}
 
 div input{padding-bottom: 18px}
 
+form input{block-size: 8px;text-align: center;opacity:100;
+padding-top: 5px;align-content: center;margin-bottom: 15px;}
 
-    form input{block-size: 8px;text-align: center;opacity:100;padding-top: 5px;align-content: center;margin-bottom: 15px;}
+main a{color: indianred;align-items: center;align-content: center;text-align: center;border: 3px dotted indianred;padding:30px 50px;
+border-radius: 90px;background-color: hsla(48, 82%, 89%, 0.78);letter-spacing: 2px;}

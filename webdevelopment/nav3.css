@@ -6,7 +6,7 @@
     .menu{align-items: center;font-family: Georgia, 'Times New Roman', Times, serif;
         border: 3px dotted indianred;padding:20px;border-radius: 50px;
     display:inline-block;text-align: center;list-style: none;align-content:center;
-    word-spacing:10px;background-color: rgba(194, 216, 228, 0.55);margin-right:30px}
+    word-spacing:10px;background-color: rgba(194, 216, 228, 0.55);margin-right:30px;width: 100%;}
     
     .menu li{display: inline-flex ;position:relative;border: 3px dotted indianred;
         border-radius: 50px;left:20px;margin-right:63px;margin-bottom: 30px;padding: 0 10px;
@@ -19,8 +19,9 @@
     /*dropdown content*/
 .dropdown{ display:none;
     position:absolute;font-size:5px;
-   ;text-align:center;height:100%;border-radius:50px;inset-block-start: 7px;padding: 0px 10px}
+   ;text-align:center;height:100%;width: 100%;border-radius:50px;inset-block-start: 7px;padding: 0px 10px}
 /*links inside dropdown*/
+
 .dropdown a{
     float: none;color: indianred;
     padding: 10px 10px; display: inline;text-align: center;}
