@@ -9,7 +9,7 @@
     word-spacing:10px;background-color: rgba(194, 216, 228, 0.55);margin-right:30px;width: 100%;}
     
     .menu li{display: inline-flex ;position:relative;border: 3px dotted indianred;
-        border-radius: 50px;left:20px;margin-right:63px;margin-bottom: 30px;padding: 0 10px;
+        border-radius: 50px;margin-right:3px;margin-bottom: 30px;padding: 0 10px;
         align-content: center;align-items:center ;text-align: center;background-color: #F9E79F;
         ;}
 
@@ -59,7 +59,7 @@
         top: 20px;
     }
     .menu a {display: none;margin: 0;}
-    #toggle:checked +.menu{display: block;left:20px;height:500px}
+    #toggle:checked +.menu{display: inline;vertical-align: center;width: 85%;}
     
     nav:checked ul {
         display: inline-block;
