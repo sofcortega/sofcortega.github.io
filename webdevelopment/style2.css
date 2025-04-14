@@ -1,3 +1,11 @@
+@font-face { 
+
+    font-family: Handjet; /*this is where we give our font a name so we can use it!*/
+    
+    src: url("Handjet/Handjet-ExtraLight.ttf"); /*remember this is how we link to files in CSS!*/
+    
+    }
+
 body{ background-color: #fbf4db;min-width: 540px}
 
 header{display:inline;
@@ -5,13 +13,13 @@ vertical-align: center;}
 
 h1{color:hsl(203, 23%, 65%);text-align: center;background-color: #f9e79f;
     border: 3px dotted indianred;border-radius: 90px;
-    font-size: xx-large;letter-spacing: 3px;}
-h2{color:indianred}
+    font-family:handjet; font-size: xx-large;letter-spacing: 3px;}
 
-p{color:indianred;border: 3px dotted indianred;text-align: center;
+
+p{border: 3px dotted indianred;text-align: center;
     padding: 80px;border-radius: 50%;background-color: #f8e9aee2;}
 
-blockquote{color:indianred;}
+blockquote{font-family:handjet;font-size: xx-large;letter-spacing: 3px;}
  
 .navbar{padding-left: 30px;}
 
@@ -41,27 +49,21 @@ main a{color: indianred;align-items: center;align-content: center;text-align: ce
     border: 3px dotted indianred;padding:30px 50px;
 border-radius: 90px;background-color: hsla(48, 82%, 89%, 0.78);letter-spacing: 2px;}
 
-blockquote{margin:35px;padding:35px;text-align: center;border-radius: 100%;
-    border:3px dashed indianred;background-color: #a4bfc760;}
 
 
 
-
-
-
-
-footer p{display: flex;justify-content: center;color:indianred;;border: indianred 3px dotted ;border-radius: 90px;;
+footer p{display: flex;justify-content: center;border: indianred 3px dotted; border-radius: 80px;
     position: relative;;font-size: large;letter-spacing: 3px;background-color: #f9e79f;
-    padding:15px;margin: 15px;align-content: center;align-items: center;flex-wrap: wrap;left:20px}
+    padding:15px;margin: 15px;align-content: center;align-items: center;flex-wrap: wrap;}
 
 
 
-.pic {        /*footer icons*/
+.pic1 {        /*footer icons*/
     width: 25px;
     height: 25px;
 }
 
-.picbig {                                  
+.picbig1 {                                  
     position: absolute;
     width: 0px;
     -webkit-transition: width 0.3s linear 0s;
@@ -69,40 +71,51 @@ footer p{display: flex;justify-content: center;color:indianred;;border: indianre
     z-index: 10;
 }
 
-.pic:hover + .picbig {
-    width: 30px;
+.pic1:hover + .picbig1 {
+    width: 40px;position:absolute; left:10px;
+}
+
+.pic2 {        /*footer icons*/
+    width: 25px;
+    height: 25px;
+}
+
+.picbig2 {                                  
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s; 
+    z-index: 10;
+}
+.pic2:hover + .picbig2 {
+    width: 40px;position:absolute; right:10px;
 }
 
     .picture{border:3px dotted rgba(161, 57, 57, 0.552);}
 
     main form{text-align:center;padding:40px;border:3px dashed indianred}
-
-.name img{position: absolute;margin-left: 30px;left:-0px}
+    
 
 .contact{position: relative;margin:10px;color: indianred;padding:5px}
 
 .name{font-size: large;padding-right:25px ;text-align: center;position: relative;color: indianred;}
 
 
-
+h1{margin-top: 60px;}
 
 
 .about{color:indianred;border: 3px dotted indianred;text-align: center;
-    padding: 10px;margin:10px;;background-color: #f9e79fb4;}
+    padding: 20px;word-spacing: 3px;margin:10px;;background-color: #f9e79fb4;}
 
  
 
 
     @media screen and (min-width: 760px) {
-        img {
-            max-width: 100%;
-            
-            text-align: left;
-        }
+        h2{color:indianred}
         .grid {
         display: grid;
         grid-gap: 2em;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 30% 70%;
         grid-template-rows:auto;
         grid-template-areas: 
             "video video"
@@ -110,27 +123,23 @@ footer p{display: flex;justify-content: center;color:indianred;;border: indianre
             "CV CV" ;
        
         }
-    
-      .video .CV {
-          grid-column-start: 1;
-          grid-column-end: 3;
-      }
-    .video {
-        grid-area: video;
+
+    .blockquote {
         padding-top: 20px;
         padding: left 200px;
     justify-self:center;
-        
-        
       }
-    
+
+      blockquote{color:indianred;margin:35px;padding:35px;text-align: center;border-radius: 100%;
+        border:3px dashed indianred;background-color: #a4bfc760;}
+
     .picture {
-        grid-area: picture;
+        grid-area: picture;margin-top: 0px;
         padding-top: 20px;
-        padding-left: 10px;
-        align-self: flex-start;
+        align-self: flex-start;padding-left: 50px;margin-left:30px;
         position: relative;
         }
+        img{width:80%}
     .about {
             grid-area: about;
            justify-self:left;
@@ -139,13 +148,18 @@ footer p{display: flex;justify-content: center;color:indianred;;border: indianre
      .CV {
         grid-area: CV;
         justify-self:center;
-                }}
+                }
+            
+
+
+     footer{color:indianred}       
+            }
    
     /* Grid layout in mobile view*/
     @media screen and (max-width: 759px) {
         .grid {
             display: grid;
-            grid-gap: 1em;
+            grid-gap: 4em;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             grid-template-areas: 
@@ -154,32 +168,82 @@ footer p{display: flex;justify-content: center;color:indianred;;border: indianre
                 "about"
                 "CV";
                }
-    
+               h2{color:indianred}
+          
+               blockquote{color:indianred;margin:35px;padding:35px;text-align: center;border-radius: 100%;
+                border:3px dashed indianred;background-color: #a4bfc760;}
+
+  
         .video {
             grid-area: video;
             align-self: center;
             width: 100%;
-            padding-left: 25px;
           }
-          img {
-            width: 100%;
-          }
+        
+          
         .picture{
 
            justify-self: center;
             grid-area: picture;
-            padding-left: 15px;
+            padding-left: 15px
             }
+
+            
+     footer{color:indianred}     
 
      .about {
         grid-area: about;
         padding-left: 10px;
                    }
-
+                   
   .CV {
     grid-area: CV;
       justify-self: center;
-    }
-    }
+    }}
+
+    .Vitae{display:none;}
     
     
+    /*printable about page*/
+
+
+     @media print {
+        
+        .Vitae{ display: block;word-spacing: 2px;}
+
+        .grid {
+            background: transparent !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+               }
+
+             .navbar{display: none!important;}
+              
+            .h2{color: black;}
+    .header{color: black;margin-bottom: 0;border:none;text-align: center;}
+.blockquote{color: black;border: none !important;margin-left: 190px;}
+    .video {
+            display: none;
+          }
+
+          .wrapper{border:none}
+
+ .picture{ display:none}
+          img{display: none}
+
+  .about {color: black;
+        grid-area: about;margin-bottom:-50px;padding:20px
+                   }
+.copyright{display: none}
+
+.pic1{display: none;}
+
+footer{color:black}
+
+  .CV a {display: none !important;
+    }
+
+strong{font-size: large;padding-right: 20px;}
+.list{margin-left: 50px;margin-top:-40px}
+}
+
