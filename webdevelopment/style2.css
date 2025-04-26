@@ -158,7 +158,10 @@ h1{margin-top: 60px;}
         justify-self:center;
                 }
             
-     footer{color:indianred;}       }
+     footer{color:indianred;}     
+
+   
+    }
             
    
     /* Grid layout in mobile view*/
@@ -187,7 +190,7 @@ h1{margin-top: 60px;}
             width: 100%;
           }
         
-          
+        
         .picture{
 
            justify-self: center;
@@ -205,8 +208,10 @@ h1{margin-top: 60px;}
                    
   .CV {
     grid-area: CV;
-      justify-self: center;
-    }}
+      justify-self: center;}
+
+     
+    }
 
     .Vitae{display:none;}
     
@@ -254,3 +259,5 @@ strong{font-size: large;padding-right: 20px;}
 .list{margin-left: 50px;margin-top:-40px}
 }
 
+input {margin: 12px;}
+textarea{margin:10px}
