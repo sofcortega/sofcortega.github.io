@@ -261,3 +261,12 @@ strong{font-size: large;padding-right: 20px;}
 
 input {margin: 12px;}
 textarea{margin:10px}
+
+table{width: 100%;border-spacing: 10px;color: indianred;text-align:center;border:3px dashed indianred}
+th{text-align: center;}
+table,th,td{border: 2px dotted indianred;text-align: center;}
+thead{text-align: center;}
+
+tr:nth-child(odd){background-color:rgba(92, 179, 205, 0.278);}
+
+.sample{justify-content: center;}
