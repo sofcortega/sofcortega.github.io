@@ -16,20 +16,6 @@
 .menu li a{display: block; color:indianred;font-size:large;padding: 15px;
     margin: 1px 15px 1px 15px;letter-spacing: 2px;position: relative;}
 
-    /*dropdown content*/
-.dropdown{ display:none;
-    position:absolute;font-size:5px;
-   ;text-align:center;width: 100%;border-radius:50px;padding: 0px 10px}
-/*links inside dropdown*/
-
-.dropdown a{
-    float: none;color: indianred;
-    padding: 10px 10px; display: inline;text-align: center;}
-
-    /*dropdown menu hover*/
-.droplink:hover .dropdown{display: block;position: relative;}
-
-.droplink:hover {display: grid;}
 
 .menu a:link{border: 3px dotted indianred; padding:15px;
     margin: 15px;border-radius: 90px; background-color:#f6ebbf;font-size: 15px;}
