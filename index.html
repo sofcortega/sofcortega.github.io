@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   
+<!--
+
+Title: Home Page
+
+Use: Home Page for my Portfolio Website
+
+Author: Sofia Ortega
+
+School/Term: University of Missouri Spring 2025
+
+Developed: April 7, 2025
+
+Tested: April 7, 2025; Passed on Safari and Chrome Browsers
+
+-->
+               <meta charset="utf-8">
+               <title>Sofia Corina Ortega</title>
+               <link rel="stylesheet" href="style2.css">
+               <link rel="stylesheet" href="nav3.css">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link rel="shortcut icon" type="image/x-icon" href="faviflower.ico">
+            </head>
+
+<body>
+
+  <script> 
+  
+  function visitorCounter() {
+    const count = (localStorage.getItem('visitorCount') || 0);
+    const newCount = parseInt(count) + 1;
+  
+    localStorage.setItem('visitorCount', newCount);
+  
+    return newCount;
+  }
+  
+  function displayCount(elementId) {
+    const count = visitorCounter();
+    const element = document.getElementById(elementId);
+  
+    if (element) {
+      element.textContent = count;
+    } else {
+      console.error(`Element with ID "${elementId}" not found.`);
+    }
+  }
+  </script>
+  
+  <nav class="navbar"> 
+    <label id="hamburger">&#9776;</label>
+       <input type="checkbox" id="toggle">
+       <ul class="menu"> 
+
+        <li class="active"> <a href="index.html">HOME</a> </li>
+        <li> <a href="about.html">ABOUT</a></li>
+            <li> <a href="projects.html">PROJECTS</a> </li> 
+                   <li> <a href="contact.html">CONTACT</a></li>     
+            <li> <a href="reflection.html">ARTIST STATEMENT</a></li> 
+          </ul>
+                    
+         </nav> 
+
+
+        <header>  <h1 class="test"> Welcome to my Website!</h1>
+          <h2> Come and stay a while!</h2>   
+          <span id="visitor-count"></span>
+        </header>
+       
+            <main style="background-color: lightgoldenrodyellow;
+            border-style:dotted;border-width:4px;
+            border-color:indianred;"> 
+            
+                <div style="background-image: url(mami.png);background-size: contain;"> 
+                    <p style="color: rgb(221, 234, 243);border: rgb(218, 247, 235) dotted 5px;">This website is a curation of all my work that I’ve completed in the past as well as a glimpse into what I seek to create in the future.
+                        Through all the different mediums of work I take part in, there is a common thread I follow where those mediums are used to communicate experiences
+                        involving memory and its frailty as well as the tie between devotional practices and self expression in artwork. Throughout both digital and physical mediums, 
+                        there are a million different ways to communicate these ideas, and I seek to focus on the intersection of Latinidad and girlhood that affects my perception of
+                        these ideas. With the work I present for your consideration, I hope that you enjoy the work and are able to think more deeply about it and/or connect with it on 
+                        some level of your own. </p>
+                    </div>
+            
+             
+             </main>
+            
+
+             <footer> <p style="background-image: url(foot.jpeg);background-size: cover;">
+              <img class="pic1" src="email.png" alt="email">
+              <img class="picbig1" src="email.png" alt="email">sofia@schoolofservice.org <br> 
+              <img class="pic2" src="instagram.png" alt="phone">
+              <img class="picbig2" src="instagram.png" alt="phone"> @loomfairy  </p>
+              <p class="copyright" >Copyright © 2026 Sofia Ortega </p> </footer>
+ 
+</body>
+</html>
